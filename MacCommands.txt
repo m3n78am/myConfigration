@@ -1,0 +1,7 @@
+# 清除Mac OS X文件“打开方式”中的重复项
+/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -kill -r -domain local -domain user;killall Finder;echo "Open With has been rebuilt, Finder will relaunch"
+
+
+
+# 打开安全，trust任何来源
+ sudo spctl --master-disable
